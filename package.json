@@ -1,13 +1,13 @@
 {
-  "name": "gulptest",
+  "name": "cloneweb_gulp",
   "version": "1.0.0",
-  "description": "Gulp Test Study",
+  "description": "웹 페이지 클론 작업 (http://www.roundaround.kr/)",
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build",
     "deploy": "gulp deploy"
   },
-  "repository": "git+https://github.com/LunchTime-github/GulpTest.git",
+  "repository": "git+https://github.com/LunchTime-github/CloneWeb_Gulp.git",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.4",
@@ -30,5 +30,6 @@
     "gulp-webserver": "^0.9.1",
     "node-sass": "^4.12.0",
     "uglifyify": "^5.0.2"
-  }
+  },
+  "main": "index.js"
 }
