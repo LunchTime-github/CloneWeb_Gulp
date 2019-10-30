@@ -1,2 +1,20 @@
 footer
-    span I love Gulp
+    .footer__wrap
+        .footer__contents
+            .footer__contents__logo
+                img.logo(src="./img/logo.svg" alt="")
+            ul.footer__contents__list
+                li
+                    a(href="")
+                        b 개인정보처리방침
+                li
+                    a(href="") 이용약관
+                li
+                    a(href="") 법적고지
+            p.footer__contents__info
+                -for(var i = 1; i <= 5; i++)
+                    if (i == 4)
+                        br
+                    span
+                        b 이런저런 텍스트 #{i} : 이런저런 내용
+            p.footer__contents__last Copyright ©2019 CJ OliveNetworks. All rights reserved.

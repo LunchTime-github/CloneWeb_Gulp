@@ -37,7 +37,9 @@ const routes = {
 const pug = () =>
   gulp
     .src(routes.pug.src)
-    .pipe(gpug())
+    .pipe(gpug({
+      pretty: true
+    }))
     .pipe(gulp.dest(routes.pug.dest));
 
 const clean = () => del(["build/", ".publish"]);
